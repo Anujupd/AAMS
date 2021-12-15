@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DoctorMaster.master.cs" Inherits="Doctor_DoctorMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td style="text-align: center; font-size: 54pt; color: #FFFFFF; font-weight: 700; background-color: #009933">A+A HOSPITAL MANAGEMENT SYSTEM</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" RenderingMode="Table" Width="100%">
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td height="400px" valign="Top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center; font-size: x-large; color: #FFFFFF; background-color: #009933">This Site Developed By Anuj Upadhyay @2021 and all &copy; Reserved By Sunrise Infotech Solution</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

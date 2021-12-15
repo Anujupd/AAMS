@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="Admin_AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            color: #FFFFFF;
+        }
+        .auto-style3 {
+            color: #6699FF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="text-align: center">
+        <table class="auto-style1">
+            <tr>
+                <td style="text-align: center; font-size: 52pt; font-weight: 700; background-color: #CC0099" class="auto-style3">
+                    <asp:Image ID="Image1" runat="server" Height="57px" ImageUrl="~/upic/Anadolu.png" Width="62px" />
+                    Goodwill Health Care</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" RenderingMode="Table" Width="100%" style="font-size: x-large; color: #FFFFCC; background-color: #FFFF00">
+                        <Items>
+                            <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Donation.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/Contact.aspx" Text="Contact" Value="Contact"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/Department.aspx" Text="Department" Value="Department"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/Faq.aspx" Text="FAQ" Value="FAQ"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/news.aspx" Text="News" Value="News"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/Feedback.aspx" Text="Feedback" Value="Feedback"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/OPD.aspx" Text="OPD" Value="OPD"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/Staff.aspx" Text="Staff" Value="Staff"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/Donation.aspx" Text="Medicine Donation" Value="medicine Donation"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Logout" Value="Logout"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td height="400px" valign="Top" style="text-align: left">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p style="font-size: x-large; color: #FFFFFF; background-color: #0000CC">
+                This Site Developed BY Anuj <a href="mailto:Upadhyay@2021"><span class="auto-style2">Upadhyay@2021</span></a> and all &copy; Reserved By Sunrise Infotech Solution</p>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
